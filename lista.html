@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>Vaticinia OnLine lista</title>
+
+		<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="lista.css">
+    	<meta charset="UTF-8"/>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    	<!-- metadati DC -->
+	    <meta name="DC.Title" content="Vaticinia OnLine">
+	    <meta name="DC.Creator" content="Cristina Ricciardi">
+	    <meta name="DC.Subject" content="Vaticini">
+	    <meta name="DC.Subject" content="Manoscritti">
+	    <meta name="DC.Description" content="Database di vaticini medievali con testi metadatati">
+	    <meta name="DC.Publisher" content="Università di Bologna">
+	    <meta name="DC.Contributor" content="Cristina Ricciardi, José Santos Paz">
+	    <meta name="DC.Date" content="2021">
+	    <meta name="DC.Type" content="Sito web">
+	    <meta name="DC.Format" content="HTML/CSS/JS">
+	    <link rel="DC.Identifier" href="https://www.nomedelsitoweb.github.io">
+	    <meta name="DC.Source" content="Expositio in Librum Beati Cirilli de tribulationibus et statu Ecclesiae, Joachim de Fiore et Telesphorus de Cusentia, Venezia 1516">
+	    <meta name="DC.Language" content="it">
+	    <meta name="DC.Relation" content="MIRABILE, GoogleMaps, VIAF, GeoNames">
+	    <link rel="DC.Coverage" href="http://www.getty.edu/vow/TGNFullDisplay?find=bologna&place=&nation=&prev_page=1&english=Y&subjectid=7003127">
+	    <meta name="DC.Rights" content="CC-BY, Creative Commons Attribuzione 4.0 Internazionale">	
+	</head>
+
+	<body>
+		<header>
+			<div id="intestazione">
+				<h1><strong>Vaticinia OnLine</strong></h1>
+			</div>
+			<h3><a href="#">EN</a></h3>
+		</header>
+
+		<!-- NAVBAR -->
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="./index.html" target="_blank">Home</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto" style="padding-bottom: 0px;">
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">Progetto</a>
+				      </li>
+
+				      <!-- ipotesi di inserire un altro dropdown per distinguere le due liste (testi e autori), anche se essendo le profezie testi anonimi non si dovrebbe dare all'autore o alla semplice attribuzione troppa enfasi... -->
+
+				      <li class="nav-item dropdown active">
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Catalogo
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          <a class="dropdown-item" href="./lista.html">Testi</a>
+				          <a class="dropdown-item" href="./lista-autori.html" target="_blank">Autori/Pseudoautori</a>
+				        </div>
+				      </li>
+
+				      <li class="nav-item dropdown">
+
+				      	<!-- questo invece alla pagina di ricerca libera -->
+
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Ricerca
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          <a class="dropdown-item" href="#">Globale</a>
+				          <div class="dropdown-divider"></div>
+				          <a class="dropdown-item" href="#">Titolo</a>
+				          <a class="dropdown-item" href="#">Autore</a>
+				          <a class="dropdown-item" href="#">Avanzata</a>
+				        </div>
+				      </li>
+
+				      <!-- queste nella navbar sono le diverse modalità di browsing: lista completa, ricerca libera, per manoscritti -->
+
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">Manoscritti</a>
+				      </li>
+
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">Novità</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">Contatti</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">Guida</a>
+				      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+			      	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+					  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+					</svg>
+			      </button>
+			    </form>
+			  </div>
+			</nav>
+
+		<section>
+			<h2><strong>Testi</strong></h2>
+
+		<!-- container -->
+			<div class="container-fluid">
+				<!-- riga 1 -->
+				<div class="row">
+					<div class="col-md-3">
+
+						<nav aria-label="breadcrumb">
+						  <ol class="breadcrumb">
+						    <li class="breadcrumb-item"><a href="./index.html" target="_blank" style="font-size: 18px;">Home</a></li>
+						    <li class="breadcrumb-item"><a href="#" style="font-size: 18px;">Catalogo</a></li>
+						    <li class="breadcrumb-item active" aria-current="page">Testi</li>
+						  </ol>
+						</nav>
+
+						<h4>Ricerca libera</h4>
+							<nav class="navbar navbar-light bg-light">
+							  	<form class="form-inline">
+							    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 180px;">
+								  <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+								  	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+									  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+									</svg>
+								  </button>
+								</form>
+							</nav>
+						<h4>Filtra per:</h4>
+							<nav aria-label="breadcrumb">
+							  <ol class="breadcrumb">
+							   <div class="btn-group dropright">
+								  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Datazione</button>
+									    <!-- Dropdown menu links -->
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">XII secolo</a>
+										<a class="dropdown-item" href="#">XIII secolo</a>
+										<a class="dropdown-item" href="#">XIV secolo</a>
+										<a class="dropdown-item" href="#">XV secolo</a>
+										<a class="dropdown-item" href="#">XVI secolo</a>
+									</div>
+								</div>
+							  </ol>
+							</nav>
+
+							<nav aria-label="breadcrumb">
+							  <ol class="breadcrumb">
+							  	<div class="btn-group dropright">
+							  		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Temi</button>
+								    <!-- Dropdown menu links -->
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">Ghibelline</a>
+										<a class="dropdown-item" href="#">Escatologiche</a>
+										<a class="dropdown-item" href="#">Papali</a>
+										<a class="dropdown-item" href="#">Francescane</a>
+										<a class="dropdown-item" href="#">Domenicane</a>
+									</div>
+								</div>
+							  </ol>
+							</nav>
+
+							<nav aria-label="breadcrumb">
+							  <ol class="breadcrumb">
+							  	<div class="btn-group dropright">
+							  		<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Soggetti</button>
+								    <!-- Dropdown menu links -->
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">Aquila</a>
+										<a class="dropdown-item" href="#">Leone</a>
+										<a class="dropdown-item" href="#">Orso</a>
+										<a class="dropdown-item" href="#">Colomba</a>
+										<a class="dropdown-item" href="#">Corvo</a>
+									</div>
+								</div>
+							  </ol>
+							</nav>
+
+					</div>
+
+					<div class="col-md-7">
+
+						<ul class="nav nav-pills">
+						  <li class="nav-item">
+						    <a class="nav-link active" href="#" style="background-color: #cc0000">Tutti</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="#">Visioni</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="#">Epistole</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="#">Epigrammi/enigmi</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="#">P. ex eventu</a>
+						  </li>
+						</ul>
+
+						<div class="list-group">
+							<a href="#" class="list-group-item list-group-item-action">Aquila veniens a semptentrione - Anonimo</a>
+							<a href="#" class="list-group-item list-group-item-action">De regno siculo - Pseudo-Gioacchino da Fiore</a>
+							<a href="#" class="list-group-item list-group-item-action">Gallorum levitas - Anonimo</a>
+							<a href="./item.html" class="list-group-item list-group-item-action" target="_blank">Gripho regalis - Anonimo</a>
+							<a href="#" class="list-group-item list-group-item-action">Insurgent gentes - Ildegarda di Bingen</a>
+							<a href="#" class="list-group-item list-group-item-action">Prophetia Merlini</a>
+							<a href="#" class="list-group-item list-group-item-action">Prophetia sancti Severi</a>
+							<a href="#" class="list-group-item list-group-item-action">Quamvis hominibus - Ildegarda di Bingen</a>
+							<a href="#" class="list-group-item list-group-item-action">Surget aquila habens rostrum - Salimbene da Parma</a>							
+							<a href="#" class="list-group-item list-group-item-action">Vidi ab aquilone - Ildegarda di Bingen</a>
+							<a href="#" class="list-group-item list-group-item-action">Vaticinia de summis pontificibus - Gioacchino da Fiore</a>
+						</div>
+
+						<nav aria-label="Page navigation example">
+						  <ul class="pagination">
+						    <li class="page-item">
+						      <a class="page-link" href="#" aria-label="Previous">
+						        <span aria-hidden="true">&laquo;</span>
+						      </a>
+						    </li>
+						    <li class="page-item active"><a class="page-link" href="#" style="background-color: #cc0000">1</a></li>
+						    <li class="page-item"><a class="page-link" href="#" style="color: black;">2</a></li>
+						    <li class="page-item"><a class="page-link" href="#" style="color: black;">3</a></li>
+						    <li class="page-item">
+						      <a class="page-link" href="#" aria-label="Next">
+						        <span aria-hidden="true">&raquo;</span>
+						      </a>
+						    </li>
+						  </ul>
+						</nav>
+					</div>
+					<div class="col-md-2">
+						<div id="Gioacchino" class="card">
+						  <img src="immagini/Gioacchino-da-fiore.jpg" class="card-img-top" alt="Gioacchino da fiore come autore" style="width: 180px; height: 220px;">
+						  <div class="card-body">
+						    <a href="./lista-autori.html" class="btn btn-danger" target="_blank">Vai agli autori</a>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<p style="margin-left: 1100px;"><a href="#intestazione">
+				<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-caret-up" viewBox="0 0 16 16">
+			  		<path d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z"/>
+				</svg></a></p>
+
+		</section>
+
+		<!-- Bootstrap JS collegamento a jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	
+    <footer>
+		<p style="padding-top: 50px;">Info</p>
+		<p>Contatti</p>
+		<p>FAQ</p>
+		<p>Collabora con noi</p>
+		<p>Licenza<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Licenza Creative Commons" style="margin-left: 7px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br/></p>
+		<p style="padding-bottom: 50px;">&copy; Cristina Ricciardi, Corso di DH & CH, 2021</p>
+	</footer>
+
+	</body>
+
+</html>

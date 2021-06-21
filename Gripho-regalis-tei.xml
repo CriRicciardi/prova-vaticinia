@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Realizzazione digitale della profezia medievale Gripho regalis</title>
+			<respStmt>
+				<resp>Sviluppato da:</resp>
+				<name xml:id="CR">Cristina Ricciardi</name>
+				<resp>Trascritto da:</resp>
+				<name xml:id="JSP">José Santos Paz</name>
+			</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Vaticinia OnLine</publisher>
+				<date>2021</date>
+				<availability>
+				  <p>Copyright 2021, Cristina Ricciardi</p>
+				  <p>Fruizione libera</p>
+				</availability>
+				<licence>CC-BY, Creative Commons Attribuzione 4.0 Internazionale</licence>
+			</publicationStmt>
+			<sourceDesc>
+				<p>Trascritto da fonte analogica</p>
+				<bibl>
+				<title>Expositio in Librum Beati Cirilli de tribulationibus et statu Ecclesiae, Joachim de Fiore et Telesphorus de Cusentia</title>
+				<pubPlace>Venezia</pubPlace>
+				<date>1516</date>
+				</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<head>Alia prophetia seu pars</head>
+			<p n="1">
+				<term type="symbol">Gripho</term> regalis genitus in <name type="place">Francia</name> veniet in orientem: trahens ad se magnam caudam: quia duobus brachijs associabitur coniuncta gente christi. <name type="role">Imperator</name> <term type="symbol">viperam</term> inueniet in cauernis: que coronabilis eam existet. Ibi erit tanta strages et effusio sanguinis: quod non fuit ex quo gigantes fuerunt: tunc gaudebit vndique sponsus: tunc gaudebit pars diabolica: que ecclesia appellabitur: tunc imperialis vndique anihilabitur: et <term type="symbol">vipera</term> reuocabit. et iterum redibit Flo. et nomina duarum ciuitatum circumdabit. Veh tibi ciuitati ornate gentium et diuitias: Veh tibi ciuitati philosophorum: veh tibi <name type="place">Lombardia</name> regnante virtute <term type="symbol">griphonis</term>: quia turris gaudij tui diuertetur. His auditis et alijs que in libri prophetarum continentur: orietur <term type="symbol">leopardus</term> et <term type="symbol">aquila</term> aquilonis: rufum habens colorem: rostrum plicatum: cor <term type="symbol">leonis</term>: cauda <term type="symbol">bouis</term>: vires <term type="symbol">lupi</term>: <term type="symbol">leopardus</term> paruus: sic tamen viribus potens et magnus cui nemo resistere poterit nisi deus deorum: transiturus alios peritos: vetans potum sitientibus; infirmis sanitatem: tunc lilium deflorebit: et <term type="symbol">aquile</term> reuiuiscent: tunc pars imperialis vndique reuocabitur: et erit in campis cum <term type="symbol">grifone/ grifo</term> vero iungetur: sed donabitur in exilium sponsi: et non inuenietur: et iterum erit in campis cum <term type="symbol">leopardo</term>: reminiscens <term type="symbol">leopardus</term> predecessorum suorum viribus extendet: aufensam et inlabili morte tungri fore deuorabit.</p>
+			<p n="2">Finis Huius prophetie.</p>
+		</body>
+	</text>
+</TEI>

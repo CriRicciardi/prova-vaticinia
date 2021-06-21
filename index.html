@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>Vaticinia OnLine</title>
+
+		<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="index.css">
+    	<meta charset="UTF-8"/>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<!-- metadati DC -->
+	    <meta name="DC.Title" content="Vaticinia OnLine">
+	    <meta name="DC.Creator" content="Cristina Ricciardi">
+	    <meta name="DC.Subject" content="Vaticini">
+	    <meta name="DC.Subject" content="Manoscritti">
+	    <meta name="DC.Description" content="Database di vaticini medievali con testi metadatati">
+	    <meta name="DC.Publisher" content="Università di Bologna">
+	    <meta name="DC.Contributor" content="Cristina Ricciardi, José Santos Paz">
+	    <meta name="DC.Date" content="2021">
+	    <meta name="DC.Type" content="Sito web">
+	    <meta name="DC.Format" content="HTML/CSS/JS">
+	    <link rel="DC.Identifier" href="https://www.nomedelsitoweb.github.io">
+	    <meta name="DC.Source" content="Expositio in Librum Beati Cirilli de tribulationibus et statu Ecclesiae, Joachim de Fiore et Telesphorus de Cusentia, Venezia 1516">
+	    <meta name="DC.Language" content="it">
+	    <meta name="DC.Relation" content="MIRABILE, GoogleMaps, VIAF, GeoNames">
+	    <link rel="DC.Coverage" href="http://www.getty.edu/vow/TGNFullDisplay?find=bologna&place=&nation=&prev_page=1&english=Y&subjectid=7003127">
+	    <meta name="DC.Rights" content="CC-BY, Creative Commons Attribuzione 4.0 Internazionale">	
+	</head>
+
+	<body>
+		<header>
+			<div id="intestazione">
+				<h1><strong>Vaticinia OnLine</strong></h1>
+			</div>
+			<h3><a href="#">EN</a></h3>
+		</header>
+
+		<section id="corpo">
+
+			<!-- NAVBAR -->
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="#">Home</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">Progetto</a>
+				      </li>
+
+				      <!-- ipotesi di inserire un altro dropdown per distinguere le due liste (testi e autori), anche se essendo le profezie testi anonimi non si dovrebbe dare all'autore o alla semplice attribuzione troppa enfasi... -->
+
+				      <li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+				          Catalogo
+				        </a>
+				        <!-- questi link portano alle liste (dei testi, in quanto poi si sdoppia in quella in base ad autori/pseudoautori) -->
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          <a class="dropdown-item" href="./lista.html" target="_blank">Testi</a>
+				          <a class="dropdown-item" href="./lista-autori.html" target="_blank">Autori/Pseudoautori</a>
+				        </div>
+				      </li>
+				      <li class="nav-item dropdown">
+				      	<!-- questo invece alla pagina di ricerca libera -->
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+				          Ricerca
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          <a class="dropdown-item" href="#">Globale</a>
+				          <div class="dropdown-divider"></div>
+				          <a class="dropdown-item" href="#">Titolo</a>
+				          <a class="dropdown-item" href="#">Autore</a>
+				          <a class="dropdown-item" href="#">Avanzata</a>
+				        </div>
+				      </li>
+
+				      <!-- queste nella navbar sono le diverse modalità di browsing: lista completa, ricerca libera, per manoscritti -->
+
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">Manoscritti</a>
+				      </li>
+
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">Novità</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">Contatti</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">Guida</a>
+				      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" style="width: 40px;">
+			      	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+					  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+					</svg></button>
+			    </form>
+			  </div>
+			</nav>
+
+		<section>
+
+			<!-- container 1 -->
+			<div class="container">
+			<!-- riga 1 -->
+				<div class="row">
+				<div class="col-md-9">
+
+					<!-- jumbotron -->
+					<div id="presentazione">
+						<div class="jumbotron">
+						  <h2 class="display-4"><strong>Vaticinia</strong></h2>
+						  <p class="lead">Il progetto nasce a partire dagli studi condotti dal professor <span class="thick">José Santos Paz</span> - Universidade da Coruña - sulle profezie medievali in collaborazione con SISMEL e ha l'intento di raccogliere i <em>vaticinia</em> in un unico database. L'implementazione <q>OnLine</q> è stata pensata per renderne disponibili in rete i testi metadatati. Per alcuni di questi la base potrà essere un'edizione di riferimento già esistente, in altri casi la novità del tipo di ricerca imporrà piuttosto la trascrizione dal manoscritto, supporto materiale e di studio imprescindibile e che per questo ha un risalto particolare nella realizzazione del sito.</p>
+						  <hr class="my-4">
+						  <p>La ricerca delle profezie è molto complessa data l'eterogeneità delle tipologie testuali e la trascrizione di questi testi fatta spesso nelle parti avventizie dei codici, di qui il frequente mancato censimento nei cataloghi descrittivi dei manoscritti e nel materiale erudito antico. Per questo motivo l'implementazione del catalogo è progressiva e sempre possibile.</p>
+						  <a class="btn btn-danger btn-lg" href="#" role="button" style="font-size: 17px; padding: 5px 10px 5px 10px; font-family: Raleway">Scopri di più</a>
+						</div>
+					</div>
+
+					<div class="card" style="width: 602px; margin-left: 80px;">
+					  <img src="immagini/Assisi-card.jpg" class="card-img-top" alt="icona ms Assisi" style="width: 600px; height: 350px;">
+					  <div class="card-body">
+					    <h5 class="card-title" style="text-align: center;">Navigare per manoscritti</h5>
+					    <p class="card-text" style="text-align: center;">Trova e accedi ai <strong>testi</strong> attraverso l'esplorazione di codici, fascicoli singoli, fogli sciolti e tutti i supporti materiali che trasmettono le profezie.</p>
+					    <a href="#" class="btn btn-danger" style="text-align: center; width: 300px; margin-left: 125px;">Sfoglia il catalogo</a>
+					  </div>
+					</div>
+
+				</div>
+				<div class="col-md-3" style="padding-top: 20px;">
+					<div class="card" style="width: 260px;">
+					  <img src="immagini/Frederick_II_and_eagle-viso.jpg" class="card-img-top" alt="icona viso Federico II" height="170">
+						  <div class="card-body">
+						    <h5 class="card-title">Soggetti ricorrenti</h5>
+						    <p class="card-text" style="padding-right: 20px;">Scopri i soggetti più diffusi nelle profezie con la relativa simbologia testuale</p>
+						  </div>
+						  <ul class="list-group list-group-flush">
+						    <li class="list-group-item">Imperatore - aquila</li>
+						    <li class="list-group-item">Monarchia francese - leone/giglio</li>
+						    <li class="list-group-item">Francescani - colomba</li>
+						    <li class="list-group-item">Domenicani - corvo</li>
+						  </ul>
+						    <a href="#" class="btn btn-danger" style="font-family: Raleway; text-align: center; margin: 10px 20px 10px 63px;">Lista completa</a>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+
+			<!-- container 2 -->
+			<div class="container" style="margin-top: 50px; margin-bottom: 40px;">
+				<div class="row">
+					<div class="col-md-3">
+						<button type="button" class="btn btn-danger" style="width: 250px; height: 170px; font-family: Garamond; font-size: 25px;"><strong>Nuove scoperte</strong></button>
+					</div>
+					<div class="col-md-2"><button type="button" class="btn btn-outline-danger" style="width: 170px; height: 170px; font-family: Raleway;">Bologna, Biblioteca Universitaria 2845 (lat. 1525; ital. 1532)</button>
+					</div>
+					<div class="col-md-3">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.8920994889945!2d11.350220214993445!3d44.496877679101466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd5f3cc485ca5%3A0xb0a72100c4457447!2sBiblioteca%20Universitaria%20di%20Bologna%20-%20BUB!5e0!3m2!1sit!2sit!4v1621948023850!5m2!1sit!2sit" width="250" height="170" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+					<div class="col-md-4">
+						<button type="button" class="btn btn-danger" style="font-size: 20px; width: 250px; padding-top: 2px; padding-bottom: 8px; margin-top: 68px;">Iscriviti alla newsletter</button>
+					</div>
+				</div>		
+
+				<div class="container">
+					<form>
+						<h5>Fai una domanda</h5>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Mittente</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 400px;">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Testo</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width: 400px; height: 130px">
+						  </div>
+						  <button type="submit" class="btn btn-danger">Invia</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+			<p style="margin-left: 1100px;"><a href="#intestazione">
+				<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-caret-up" viewBox="0 0 16 16">
+			  		<path d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z"/>
+				</svg></a></p>
+
+		</section>
+
+		<!-- Bootstrap JS collegamento a jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	
+	<footer>
+		<p style="padding-top: 50px;">Info</p>
+		<p >Contatti</p>
+		<p>FAQ</p>
+		<p>Collabora con noi</p>
+		<p>Licenza<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Licenza Creative Commons" style="margin-left: 7px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br/></p>
+		<p style="padding-bottom: 50px;">&copy; Cristina Ricciardi, Corso di DH & CH, 2021</p>
+	</footer>
+
+	</body>
+
+</html>

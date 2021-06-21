@@ -1,0 +1,121 @@
+header {
+	background-image: url("immagini/Assisi-intestazione1.jpg");
+	height: 155px; 
+}
+
+h1 {
+	color: black;
+	font-family: Garamond;
+	font-size: 60px;
+}
+
+#intestazione {
+	padding-top: 30px;
+  	padding-right: 30px;
+  	padding-bottom: 10px;
+  	padding-left: 80px;
+}
+
+#corpo {
+	background-image: url(immagini/Assisi-background.jpg);
+}
+
+h3 {
+	font-size: 25px;
+	text-align: right;
+	padding-right: 17px;
+}
+
+nav {
+	font-family: Raleway;
+	height: 60px;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+	background-color:  #660000;
+}
+
+.jumbotron {
+	height:470px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 60px;
+ 	margin-bottom: 50px;
+  	margin-right: 20px;
+}
+
+span.thick {
+  font-weight: bold;
+}
+
+span.thicker {
+  font-weight: 900;
+}
+
+.display-4 {
+	font-size: 40px;
+}
+
+h2 {
+	font-family: Garamond;
+	font-size: 40px;
+}
+
+p {
+	font-family: Raleway;
+	text-align: justify;
+}
+
+.lead {
+	font-size: 17px;
+}
+
+.btn {
+	width: 130px;
+	height: 37px;
+}
+
+a {
+	font-family: Raleway;
+	color: black;
+}
+
+a:hover {
+	color: #cc0000;
+ }
+
+ button {
+ 	font-family: Raleway;
+ 	text-align: center;
+ }
+
+h5 {
+	font-family: Garamond;
+	font-size: 27px;
+	text-decoration: underline;
+}
+
+li {
+	font-family: Raleway;
+}
+
+h4 {
+
+}
+
+form {
+	padding-top: 30px; padding-bottom: 23px
+}
+
+label {
+	font-family: Raleway;
+}
+
+footer {
+	background-color: #660000;
+}
+
+footer p {
+	color: white; 
+	margin-left: 50px;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mp:metadata xmlns:mp="http://example.org/MyProject/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
+	<collection xml:id="VATICINIA ONLINE">
+		<item n="1" xml:id="VOL">
+			<text xml:id="GR">
+			<dc:title>Gripho regalis genitus in Francia</dc:title>
+			<dc:creator>Anonimo</dc:creator>
+			<dc:creator xsi:type="mp:viaf" mp:ref="http://viaf.org/viaf/87772061/#Hildegard_von_Bingen,_A%CC%88btissin,_Heilige_1098-1179">Ildegarda di Bingen</dc:creator>
+			<dc:date type="subject">XIII secolo?</dc:date>
+			<dc:subject>Profezia, Impero, Medioevo</dc:subject>
+			<dc:subject xsi:type="dcterms:UDC">81`04</dc:subject>
+			<dc:subject xsi:type="dcterms:LCSH">https://id.loc.gov/authorities/subjects/sh2002011433.html</dc:subject>
+			<dc:description xml:lang="it">Breve vaticinio di area ghibellina che dall’incipit si intitola <work>Gripho regalis genitus in Francia</work>. Se ne hanno due redazioni principali, una nella <work>Cronica</work> di <person>Salimbene da Parma</person> e l'altra in 6 manoscritti. Insieme a un’altra profezia, <work>Aquila veniens</work> - le due sono legate tra loro nella tradizione manoscritta - è servita nel <date>XV secolo</date> a comporre una <work>Prophetia sancti Severi</work> (scritta in <place>Romagna</place>).</dc:description>
+			<dc:publisher>Vaticinia OnLine</dc:publisher>
+			<dc:contributor>Cristina Ricciardi, José Santos Paz</dc:contributor>
+			<dc:type>Testo</dc:type>
+			<dc:format>text/html</dc:format>
+			<dcterms:extent>21,3 Kbytes</dcterms:extent>
+			<dc:identifier xsi:type="dcterms:URI">file:///C:/Users/Cristina/Desktop/ProgettoDH/Vaticinia-item.html</dc:identifier>
+			<dc:source>IT\ICCU\BVEE\008427</dc:source>
+			<dc:provenance>Bayerische Staatsbibliothek</dc:provenance>
+			<dc:language>Lat</dc:language>
+			<dc:coverage>Bologna, 2021-06-06</dc:coverage>
+			<dc:rights>Copyright 2021 Cristina Ricciardi - CC-BY, Creative Commons Attribuzione 4.0 Internazionale</dc:rights>
+			</text>
+		</item>
+	</collection>
+</mp:metadata>

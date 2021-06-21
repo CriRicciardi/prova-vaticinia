@@ -1,0 +1,116 @@
+header {
+	background-image: url("immagini/Assisi-intestazione1.jpg");
+	height: 155px; 
+}
+
+h1 {
+	color: black;
+	font-family: Garamond;
+	font-size: 60px;
+}
+
+#intestazione {
+	padding-top: 30px;
+  	padding-right: 30px;
+  	padding-bottom: 10px;
+  	padding-left: 80px;
+}
+
+h3 {
+	text-align: right;
+	font-size: 25px;
+	padding-right: 17px;
+}
+
+nav {
+	font-family: Raleway;
+	font-size: 20px;
+	color: black;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+	background-color:  #660000;
+}
+
+h2 {
+	text-align: center;
+	font-family: Garamond;
+	font-size: 40px;
+	padding: 20px 50px 20px 50px;
+	background-color: #ffecb3;
+}
+
+p {
+	font-family: Raleway;
+	font-size: 18px;
+	color: black;
+	text-align: justify;
+}
+
+h4 {
+	text-align: left;
+	font-family: Garamond;
+	font-size: 25px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.row {
+	padding-top: 0px;
+	padding-bottom: 15px;
+}
+
+ul {
+	padding-bottom: 15px;
+	font-family: Raleway;
+	font-size: 20px;
+	color: black;
+}
+
+a {
+	font-family: Raleway;
+	color: black;
+}
+
+a:hover {
+	color: #cc0000;
+ }
+
+li {
+	font-family: Raleway;
+	color: black;
+}
+
+.list-group {
+	font-size: 20px;
+	padding-bottom: 22px;
+}
+
+.alert {
+	font-family: Raleway;
+	text-align: justify;
+}
+
+ol {
+ 	font-size: 18px;
+ 	width: 285px;
+ }
+
+#testi {
+	width: 180px;
+	height: 300px;
+}
+
+span {
+	color: black;
+}
+
+footer {
+	background-color: #660000;
+}
+
+footer p {
+	color: white; 
+	margin-left: 50px;
+	font-size: 16px;
+}

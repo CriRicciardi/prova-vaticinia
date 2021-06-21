@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>Vaticinia OnLine item</title>
+
+		<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="item.css">
+    	<meta charset="UTF-8"/>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    	<!-- metadati DC -->
+	    <meta name="DC.Title" content="Vaticinia OnLine">
+	    <meta name="DC.Creator" content="Cristina Ricciardi">
+	    <meta name="DC.Subject" content="Vaticini">
+	    <meta name="DC.Subject" content="Manoscritti">
+	    <meta name="DC.Description" content="Database di vaticini medievali con testi metadatati">
+	    <meta name="DC.Publisher" content="Università di Bologna">
+	    <meta name="DC.Contributor" content="Cristina Ricciardi, José Santos Paz">
+	    <meta name="DC.Date" content="2021">
+	    <meta name="DC.Type" content="Sito web">
+	    <meta name="DC.Format" content="HTML/CSS/JS">
+	    <link rel="DC.Identifier" href="https://www.nomedelsitoweb.github.io">
+	    <meta name="DC.Source" content="Expositio in Librum Beati Cirilli de tribulationibus et statu Ecclesiae, Joachim de Fiore et Telesphorus de Cusentia, Venezia 1516">
+	    <meta name="DC.Language" content="it">
+	    <meta name="DC.Relation" content="MIRABILE, GoogleMaps, VIAF, GeoNames">
+	    <link rel="DC.Coverage" href="http://www.getty.edu/vow/TGNFullDisplay?find=bologna&place=&nation=&prev_page=1&english=Y&subjectid=7003127">
+	    <meta name="DC.Rights" content="CC-BY, Creative Commons Attribuzione 4.0 Internazionale">	
+	</head>
+
+	<body>
+		<header>
+			<div id="intestazione">
+				<h1><strong>Vaticinia OnLine</strong></h1>
+			</div>
+			<h3><a href="#">EN</a></h3>
+		</header>
+
+		<!-- NAVBAR -->
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="./index.html" target="_blank" style="font-size: 20px;">Home</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">Progetto</a>
+				      </li>
+
+				      <!-- ipotesi di inserire un altro dropdown per distinguere le due liste (testi e autori), anche se essendo le profezie testi anonimi non si dovrebbe dare all'autore o alla semplice attribuzione troppa enfasi... -->
+
+				      <li class="nav-item dropdown active">
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+				          Catalogo
+				        </a>
+				        <!-- questi link portano alle liste (dei testi, in quanto poi si sdoppia in quella in base ad autori/pseudoautori) -->
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          <a class="dropdown-item" href="./lista.html" target="_blank">Testi</a>
+				          <a class="dropdown-item" href="./lista-autori.html" target="_blank">Autori/Pseudoautori</a>
+				        </div>
+				      </li>
+				      <li class="nav-item dropdown">
+				      	<!-- questo invece alla pagina di ricerca libera -->
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+				          Ricerca
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          <a class="dropdown-item" href="#">Globale</a>
+				          <div class="dropdown-divider"></div>
+				          <a class="dropdown-item" href="#">Titolo</a>
+				          <a class="dropdown-item" href="#">Autore</a>
+				          <a class="dropdown-item" href="#">Avanzata</a>
+				        </div>
+				      </li>
+
+				      <!-- queste nella navbar sono le diverse modalità di browsing: lista completa, ricerca libera, per manoscritti -->
+
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">Manoscritti</a>
+				      </li>
+
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">News</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">Contattaci</a>
+				      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+			      	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+					  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+					</svg>
+			      </button>
+			    </form>
+			  </div>
+			</nav>
+
+
+		<section>
+			<h2><strong>Gripho regalis genitus in Francia</strong></h2>
+
+			<!-- container -->
+			<div class="container-fluid">
+			<!-- riga 1 -->
+				<div class="row">
+					<div class="col-md-2">
+
+						<nav aria-label="breadcrumb">
+						  <ol class="breadcrumb">
+						    <li class="breadcrumb-item"><a href="./index.html" target="_blank">Home</a></li>
+						    <li class="breadcrumb-item"><a href="#">Catalogo</a></li>
+						    <li class="breadcrumb-item"><a href="./lista.html" target="_blank">Testi</a></li>
+						    <li class="breadcrumb-item active" aria-current="page">Gripho regalis</li>
+						  </ol>
+						</nav>
+
+						<div id="link">
+							<button type="button" class="btn btn-outline-danger" style="margin: 10px 20px 5px 10px;">Condividi
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+								  <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+								</svg>
+							</button>
+							<button type="button" class="btn btn-outline-danger" style="margin: 5px 20px 5px 10px;">PDF testo
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+								  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+								  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+								</svg>
+							</button>
+							<a href="file:///C:/Users/Cristina/Desktop/ProgettoDH/Gripho-regalis-tei.xml" target="_blank"><button type="button" class="btn btn-outline-danger" style="margin: 5px 20px 5px 10px;">XML/TEI</button></a>
+							<a href="file:///C:/Users/Cristina/Desktop/ProgettoDH/item.xml" target="_blank"><button type="button" class="btn btn-outline-danger" style="margin: 5px 20px 20px 10px;">XML/DC</button></a>
+						</div>
+					
+							<div id="MIRABILE" class="card">
+							  <div class="card-body">
+							    <h5 class="card-title">Link esterni</h5>
+							    <p>MIRABILE:</p>
+							    	<ul>
+									    <li><a href="#" class="card-link">Gripho regalis</a></li>
+									    <li><a href="#" class="card-link">Ms Bologna</a></li>
+									    <li><a href="#" class="card-link">Ms Milano</a></li>
+									    <li><a href="#" class="card-link">Ms Parigi 3455</a></li>
+									    <li><a href="#" class="card-link">Ms Vienna</a></li>
+							    	</ul>
+							  </div>
+							</div>
+
+							<div id="RB" class="card">
+							  <div class="card-header">
+							    <h5 class="card-title">Riferimenti</h5>
+							  </div>
+							  	  <ul class="list-group list-group-flush">
+								    <li class="list-group-item"><a href="http://www.repbib.uni-trier.de/cgi-bin/rebiIndex.tcl?ac=detail&idx=6035&taut=&xaut=&tord=&xord=&xbib=&tbib=&xoli=&toli=&xuot=&suot=&tlnr=4112&tinc=&texp=&tttl=&xttl=&suzt=&xzeit=&vtext=&vtbtn=und#erg" target="_blank" title="Vai ad RB digitale">Stegmüller, F. (1981). 3: Commentaria : Auctores H-M. Matriti Consejo superior de investigaciones cientificas, n° 4112</a></li>
+								  </ul>
+							</div>
+
+							<h4>Autori correlati:</h4>
+
+							<div id="Ildegarda" class="card">
+							  <img src="immagini/Hildegard.jpg" class="card-img-top" alt="Ildegarda autore" style="width: 200px; height: 210px;">
+							  <div class="card-body">
+							    <h5 class="card-title" style="font-size: 20px;">Ildegarda di Bingen</h5>
+							    <p class="card-text">Autore</p>
+							    <a href="./item-persona.html" class="btn btn-danger" target="_blank">Vai alla scheda di autorità</a>
+							  </div>
+							</div>
+
+
+					</div>
+
+					<div class="col-md-7">
+						<div id="testo">
+							<p><span class="head"><em>Alia prophetia seu pars</em></span></p>
+							 <p><a href="#"><span class="simbolo">Gripho</span></a> regalis genitus in <span class="luogo">Francia</span> veniet in orientem: trahens ad se magnam caudam: quia duobus brachijs associabitur coniuncta gente christi. <a href="#"><span class="soggetto">Imperator</span></a> <a href="#"><span class="simbolo">viperam</span></a> inueniet in cauernis: que coronabilis eam existet. Ibi erit tanta strages et effusio sanguinis: quod non fuit ex quo gigantes fuerunt: tunc gaudebit vndique sponsus: tunc gaudebit pars diabolica: que ecclesia appellabitur: tunc imperialis vndique anihilabitur: et <a href="#"><span class="simbolo">vipera</span></a> reuocabit. et iterum redibit Flo. et nomina duarum ciuitatum circumdabit. Veh tibi ciuitati ornate gentium et diuitias: Veh tibi ciuitati philosophorum: veh tibi <span class="luogo">Lombardia</span> regnante virtute <a href="#"><span class="simbolo">griphonis</span></a>: quia turris gaudij tui diuertetur. His auditis et alijs que in libri prophetarum continentur: orietur <a href="#"><span class="simbolo">leopardus</span></a> et <a href="#"><span class="simbolo">aquila</span></a> aquilonis: rufum habens colorem: rostrum plicatum: cor <a href="#"><span class="simbolo">leonis</span></a>: cauda <a href="#"><span class="simbolo">bouis</span></a>: vires <a href="#"><span class="simbolo">lupi</span></a>: <a href="#"><span class="simbolo">leopardus</span></a> paruus: sic tamen viribus potens et magnus cui nemo resistere poterit nisi deus deorum: transiturus alios peritos: vetans potum sitientibus; infirmis sanitatem: tunc lilium deflorebit: et <a href="#"><span class="simbolo">aquile</span></a> reuiuiscent:  tunc pars imperialis vndique reuocabitur: et erit in campis cum <a href="#"><span class="simbolo">grifone</span></a>/ grifo vero iungetur: sed donabitur in exilium sponsi: et non inuenietur: et iterum erit in campis cum <a href="#"><span class="simbolo">leopardo</span></a>: reminiscens <a href="#"><span class="simbolo">leopardus</span></a> predecessorum suorum viribus extendet: aufensam et inlabili morte tungri fore deuorabit.</p>
+							<p><span class="explicit"><em>Finis Huius prophetie</em></span>.</p>
+						</div>
+
+							<div class="jumbotron jumbotron-fluid">
+							  <div class="container">
+							    <p class="lead">Breve vaticinio di area ghibellina che dall’incipit si intitola <em>Gripho regalis genitus in Francia</em>. Se ne hanno due redazioni principali, una nella <em>Cronica</em> di <a href="#" title="Vai alla scheda di autorità">Salimbene da Parma<sup>autore</sup></a> e l'altra in 6 manoscritti. Insieme a un’altra profezia, Aquila veniens - le due sono legate tra loro nella tradizione manoscritta - è servita nel XV secolo a comporre una <a href="#" title="Vai al testo"><em>Prophetia sancti Severi<sup>testo</sup></em></a> (scritta in Romagna).</p>
+							  </div>
+							</div>
+							
+								<ul class="nav nav-pills" style="margin-bottom: 10px;">
+								  <li class="nav-item">
+								    <a class="nav-link active" href="#" style="background-color: #cc0000">Metadati</a>
+								  </li>
+								  <li class="nav-item">
+								    <a class="nav-link" href="#">Bibliografia</a>
+								  </li>
+								</ul>
+
+									<ul class="list-group list-group-horizontal">
+									  <li class="list-group-item" style="width: 200px;">Titolo</li>
+									  <li class="list-group-item flex-fill">Gripho regalis genitus in Francia</li>
+									</ul>
+									<ul class="list-group list-group-horizontal-sm">
+									  <li class="list-group-item" style="width: 200px;">Autore</li>
+									  <li class="list-group-item flex-fill" style="padding-right: 10px;">Anonimo / <a href="http://viaf.org/viaf/87772061/#Hildegard_von_Bingen,_A%CC%88btissin,_Heilige_1098-1179" target="_blank" title="Identificativo VIAF di Hildegardis : Bingensis">Hildegardis : Bingensis<sup>VIAF</sup></a> (attribuzione minoritaria)</li>
+									</ul>
+									<ul class="list-group list-group-horizontal-md">
+									  <li class="list-group-item" style="width: 200px;">Periodo</li>
+									  <li class="list-group-item flex-fill">XIII secolo?</li>
+									</ul>
+									<ul class="list-group list-group-horizontal-xl">
+									  <li class="list-group-item" style="width: 200px;">Tipo di oggetto</li>
+									  <li class="list-group-item flex-fill"><a href="http://wordnetweb.princeton.edu/perl/webwn?o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&r=1&s=text&i=3&h=1001130000000000200000#c" target="_blank" title="Vedi in WordNet">Testo<sup>WordNet</sup></a></li>
+									</ul>						
+									<ul class="list-group list-group-horizontal-xl">
+									  <li class="list-group-item" style="width: 246px;">Fonte</li>
+									  <li class="list-group-item flex-fill"><a href="#" title="Vedi scheda ISBD"><em>Expositio in Librum Beati Cirilli de tribulationibus et statu Ecclesiae</em>, Venezia 1516</a></li>
+									</ul>
+									<ul class="list-group list-group-horizontal-lg">
+									  <li class="list-group-item" style="width: 200px;">Tipologia</li>
+									  <li class="list-group-item flex-fill">Ghibellina</li>
+									</ul>
+									<ul class="list-group list-group-horizontal-xl">
+									  <li class="list-group-item" style="width: 200px;">Soggetti presenti</li>
+									  <li class="list-group-item flex-fill">Aquila, grifone, imperatore, leone, leopardo, lupo
+									  	<button type="button" class="btn btn-outline-danger" style="width: 75px; height: 50px; margin-left: 17px; padding-top: 1px;">Lista soggetti</button></li>
+									</ul>
+									<ul class="list-group list-group-horizontal-xl">
+									  <li class="list-group-item" style="width: 200px;">Lingua</li>
+									  <li class="list-group-item flex-fill">lat</li>
+									</ul>
+									<ul class="list-group list-group-horizontal-xl">
+									  <li class="list-group-item" style="width: 200px;">Temi</li>
+									  <li class="list-group-item flex-fill">
+									  	<div id="tag">
+									  	<button type="button" class="btn btn-danger">
+									  		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+											  <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
+											  <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
+											</svg>Profezie</button>
+									  	<button type="button" class="btn btn-light">
+									  		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+											  <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
+											  <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
+											</svg>Impero</button>
+									  	<button type="button" class="btn btn-secondary">
+									  		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+											  <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
+											  <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
+											</svg>Medioevo</button>
+										<button type="button" class="btn btn-danger">
+									  		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+											  <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
+											  <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
+											</svg>Manoscritti</button>
+										</div>
+									  </li>
+									</ul>
+					</div>
+
+					<div class="col-md-3">
+						<h4 style="padding-top: 0px;">Elementi correlati:</h4>
+							<div id="Cronica" class="card">
+							  <img src="immagini/salimbene_cronica.jpg" class="card-img-top" alt="Ildegarda autore" height="315px">
+							  <div class="card-body">
+							    <h6 class="card-title" style="margin-bottom: 5px"><em>Gripho regalis</em> nella <em>Cronica</em>, <a href="https://viaf.org/viaf/89136582/#Salimbene,_da_Parma,_1221-1287." target="_blank" title="Identificativo VIAF di Salimbene, da Parma" style="font-family: Garamond; font-size: 20px;">Salimbene, da Parma<sup>VIAF</sup></h6></a>
+							    <p class="card-text">diversa redazione</p>
+							    <a href="./item-persona.html" class="btn btn-danger" target="_blank">Vai al testo</a>
+							  </div>
+							</div>
+
+							<div class="card">
+							  <div class="card-header" style="padding-bottom: 0px;">
+							    <h5 class="card-title">Testimoni</h5>
+							  </div>
+							  <div class="card-header" style="height: 40px; padding-top: 8px;">
+							    <h6 class="card-title">Manoscritti:</h6>
+							  </div>
+							  	  <ul class="list-group list-group-flush" style="font-size: 15px;">
+								    <li class="list-group-item"><a href="#">Bologna, Biblioteca Universitaria 2845 (lat. 1525; ital. 1532), p. 265</a></li>
+								    <li class="list-group-item"><a href="#">Milano, Biblioteca Nazionale Braidense (Brera), Morbio 48 (726), f. 120r</a></li>
+								    <li class="list-group-item"><a href="#">Paris, Bibliothèque Nationale de France, lat. 3178, ff. 19r-v</a></li>
+								    <li class="list-group-item"><a href="#">Paris, Bibliothèque Nationale de France, lat. 3455, ff. 34v-35r</a></li>						 
+								    <li class="list-group-item"><a href="#">Venezia, Biblioteca Nazionale Marciana, lat. III. 177 (2176), f. 43r-v</a></li>
+								    <li class="list-group-item"><a href="#">Wien, Österreichische Nationalbibliothek 11413, f. 106v</a></li>
+								   </ul>
+								<div class="card-header" style="height: 40px; padding-top: 8px;">
+							    	<h6 class="card-title">Edizioni a stampa:</h6>
+							  	</div>
+								   <ul class="list-group list-group-flush" style="font-size: 15px;">
+								    <li class="list-group-item"><a href="#">Expositio in Librum Beati Cirilli de tribulationibus et statu Ecclesiae, Joachim de Fiore et Telesphorus de Cusentia, Venezia 1516.</a></li>
+								    <li class="list-group-item"><a href="#">Lectiones memorabiles et reconditae, Johann Wolf, vol. I pp. 602-3 (centenarius (XIV), 1600</a></li>
+								  </ul>
+							</div>
+					</div>
+				</div>
+
+
+				<p style="margin-left: 1100px;"><a href="#intestazione">
+				<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-caret-up" viewBox="0 0 16 16">
+			  		<path d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z"/>
+				</svg></a></p>
+			
+		</section>
+
+		<!-- Bootstrap JS collegamento a jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	
+	<footer>
+		<p style="padding-top: 50px;">Info</p>
+		<p>Contatti</p>
+		<p>FAQ</p>
+		<p>Collabora con noi</p>
+		<p>Licenza<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Licenza Creative Commons" style="margin-left: 7px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br/></p>
+		<p style="padding-bottom: 50px;">&copy; Cristina Ricciardi, Corso di DH & CH, 2021</p>
+	</footer>
+
+	</body>
+
+</html>

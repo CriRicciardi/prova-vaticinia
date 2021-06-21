@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>Vaticinia OnLine item persona</title>
+
+		<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="item-persona.css">
+    	<meta charset="UTF-8"/>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    	<!-- metadati DC -->
+	    <meta name="DC.Title" content="Vaticinia OnLine">
+	    <meta name="DC.Creator" content="Cristina Ricciardi">
+	    <meta name="DC.Subject" content="Vaticini">
+	    <meta name="DC.Subject" content="Manoscritti">
+	    <meta name="DC.Description" content="Database di vaticini medievali con testi metadatati">
+	    <meta name="DC.Publisher" content="Università di Bologna">
+	    <meta name="DC.Contributor" content="Cristina Ricciardi, José Santos Paz">
+	    <meta name="DC.Date" content="2021">
+	    <meta name="DC.Type" content="Sito web">
+	    <meta name="DC.Format" content="HTML/CSS/JS">
+	    <link rel="DC.Identifier" href="https://www.nomedelsitoweb.github.io">
+	    <meta name="DC.Source" content="Expositio in Librum Beati Cirilli de tribulationibus et statu Ecclesiae, Joachim de Fiore et Telesphorus de Cusentia, Venezia 1516">
+	    <meta name="DC.Language" content="it">
+	    <meta name="DC.Relation" content="MIRABILE, GoogleMaps, VIAF, GeoNames">
+	    <link rel="DC.Coverage" href="http://www.getty.edu/vow/TGNFullDisplay?find=bologna&place=&nation=&prev_page=1&english=Y&subjectid=7003127">
+	    <meta name="DC.Rights" content="CC-BY, Creative Commons Attribuzione 4.0 Internazionale">
+	</head>
+
+	<body>
+		<header>
+			<div id="intestazione">
+				<h1><strong>Vaticinia OnLine</strong></h1>
+			</div>
+			<h3><a href="#">EN</a></h3>
+		</header>
+
+		<!-- NAVBAR -->
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="./index.html" target="_blank" style="font-size: 20px;">Home</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">Progetto</a>
+				      </li>
+
+				      <!-- ipotesi di inserire un altro dropdown per distinguere le due liste (testi e autori), anche se essendo le profezie testi anonimi non si dovrebbe dare all'autore o alla semplice attribuzione troppa enfasi... -->
+
+				      <li class="nav-item dropdown active">
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+				          Catalogo
+				        </a>
+				        <!-- questi link portano alle liste (dei testi, in quanto poi si sdoppia in quella in base ad autori/pseudoautori) -->
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          <a class="dropdown-item" href="./lista.html" target="_blank">Testi</a>
+				          <a class="dropdown-item" href="./lista-autori.html" target="_blank">Autori/Pseudoautori</a>
+				        </div>
+				      </li>
+				      <li class="nav-item dropdown">
+				      	<!-- questo invece alla pagina di ricerca libera -->
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 20px;">
+				          Ricerca
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          <a class="dropdown-item" href="#">Globale</a>
+				          <div class="dropdown-divider"></div>
+				          <a class="dropdown-item" href="#">Titolo</a>
+				          <a class="dropdown-item" href="#">Autore</a>
+				          <a class="dropdown-item" href="#">Avanzata</a>
+				        </div>
+				      </li>
+
+				      <!-- queste nella navbar sono le diverse modalità di browsing: lista completa, ricerca libera, per manoscritti -->
+
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">Manoscritti</a>
+				      </li>
+
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">News</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#" style="font-size: 20px;">Contattaci</a>
+				      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+			      	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+					  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+					</svg>
+			      </button>
+			    </form>
+			  </div>
+			</nav>
+
+
+		<section>
+			<h2><strong>Ildegarda di Bingen</strong></h2>
+
+			<!-- container -->
+			<div class="container-fluid">
+			<!-- riga 1 -->
+				<div class="row">
+					<div class="col-md-2">
+						<aside>
+						<nav aria-label="breadcrumb">
+						  <ol class="breadcrumb">
+						    <li class="breadcrumb-item"><a href="./index.html" target="_blank">Home</a></li>
+						    <li class="breadcrumb-item"><a href="#">Catalogo</a></li>
+						    <li class="breadcrumb-item"><a href="./lista-autori.html" target="_blank">Autori/Pseudoautori</a></li>
+						    <li class="breadcrumb-item active" aria-current="page">Ildegarda di Bingen - Scheda di autorità</li>
+						  </ol>
+						</nav>
+
+						<div id="link">
+							<button type="button" class="btn btn-outline-danger" style="margin: 10px 20px 5px 20px;">Condividi
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+								  <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+								</svg>
+							</button>
+							<button type="button" class="btn btn-outline-danger" style="margin: 5px 20px 20px 20px;">Sfoglia galleria
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+							  <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+							  <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+							</svg></button>
+						</div>
+					
+							<div id="MIRABILE" class="card">
+							  <div class="card-body">
+							    <h5 class="card-title">Link esterni</h5>
+							    <p style="margin-bottom: 5px;">MIRABILE:</p>
+							    	<ul style="padding-left: 10px;">
+									    <li><a href="http://sip.mirabileweb.it.ezproxy.unibo.it/author/hildegardis-bingensis-abbatissa-n-1098-m-17-9-1179-author/19196" class="card-link" target="_blank">Hildegardis Bingensis abbatissa, s. (n. 1098, m. 17-9-1179)</a></li>
+							    	</ul>
+							  </div>
+							</div>
+
+								<div id ="Ildegarda" class="card">
+								  <img src="immagini/Hildegard-visione.jpg" class="card-img-top" alt="Visione di Ildegarda" style="width: 210px;">
+								  <div class="card-body">
+								    <p class="card-text">Ildegarda di Bingen riceve una visione e la descrive al suo segretario.</p>
+								    <p>Dal manoscritto <em>Scivias</em>.</p>
+								  </div>
+								</div>
+						</aside>
+					</div>
+
+					<div class="col-md-7">
+
+						<div class="jumbotron jumbotron-fluid" style="height: 600px;">
+						  <div class="container">
+						  	<img src="immagini/Hildegard-esteso.jpg" class="card-img-top" alt="Hildegard autore intestazione" style="margin-bottom: 10px;">
+						    <p class="lead">Ildegarda è una delle più famose autrici di profezie. Molte le sono state attribuite in virtù della sua grande autorevolezza e fama di visionaria.</p>
+						  </div>
+						</div>
+
+						<ul class="nav nav-pills" style="margin-bottom: 10px;">
+						  <li class="nav-item">
+						    <a class="nav-link active" href="#" style="background-color: #cc0000">Metadati</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="#">Profezie</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="#">Bibliografia</a>
+						  </li>
+						</ul>
+
+						<ul class="list-group list-group-horizontal-sm">
+						  <li class="list-group-item" style="width: 230px;">Tipo autore</li>
+						  <li class="list-group-item flex-fill">Persona</li>
+						</ul>
+						<ul class="list-group list-group-horizontal">
+						  <li class="list-group-item" style="width: 230px;">Nome</li>
+						  <li class="list-group-item flex-fill"><a href="http://viaf.org/viaf/87772061/#Hildegard_von_Bingen,_A%CC%88btissin,_Heilige_1098-1179" target="_blank" title="Identificativo VIAF di Hildegardis : Bingensis">Hildegardis : Bingensis<sup>VIAF</sup></a></li>
+						</ul>
+						<ul class="list-group list-group-horizontal-sm">
+						  <li class="list-group-item" style="width: 230px;">Forme varianti</li>
+						  <li class="list-group-item flex-fill">
+						  	<ul>
+						  		<li>Hildegardis - santa</li>
+								<li>Ildegarda - santa</li>
+								<li>Ildegarda : di Bingen - santa</li>
+								<li>Hildegardis : Bingensis - snta</li>
+								<li>Hildegard : von Bingen - santa</li>
+								<li>Hildegarda - santa</li>
+								<li>Bingen, Hildegard : von</li>
+								<li>Hildegardis - santa ; abbatissa</li>
+							</ul>
+							</li>
+						</ul>
+						<ul class="list-group list-group-horizontal-sm">
+						  <li class="list-group-item" style="width: 230px;">Sesso</li>
+						  <li class="list-group-item flex-fill">F</li>
+						</ul>
+						<ul class="list-group list-group-horizontal-md">
+						  <li class="list-group-item" style="width: 230px;">Paese</li>
+						  <li class="list-group-item flex-fill">Germania</li>
+						</ul>
+						<ul class="list-group list-group-horizontal-md">
+						  <li class="list-group-item" style="width: 230px;">Data di nascita</li>
+						  <li class="list-group-item flex-fill">1098</li>
+						</ul>
+						<ul class="list-group list-group-horizontal-xl">
+						  <li class="list-group-item" style="width: 230px;">Luogo di nascita</li>
+						  <li class="list-group-item flex-fill"><a href="https://www.geonames.org/6554830/bermersheim-vor-der-hoehe.html" target="_blank" title="Identificativo GeoNames di Bermersheim vor der Höhe">Bermersheim vor der Höhe<sup>GeoNames</sup></a></li>
+						</ul>						
+						<ul class="list-group list-group-horizontal-xl">
+						  <li class="list-group-item" style="width: 230px;">Data di morte</li>
+						  <li class="list-group-item flex-fill">1179</li>
+						</ul>
+						<ul class="list-group list-group-horizontal-xl">
+						  <li class="list-group-item" style="width: 230px;">Luogo di morte</li>
+						  <li class="list-group-item flex-fill"><a href="https://www.geonames.org/2948825/bingen-am-rhein.html" target="_blank" title="Identificativo GeoNames di Bingen am Rhein">Bingen am Rhein<sup>GeoNames</sup></a></li>
+						</ul>
+						<ul class="list-group list-group-horizontal-xl">
+						  <li class="list-group-item" style="width: 306px;">Nota informativa</li>
+						  <li class="list-group-item flex-fill">Ildegarda (lat. Hildegarda) di Bingen, santa, mistica benedettina, dottore della Chiesa</li>
+						</ul>
+						<ul class="list-group list-group-horizontal-xl">
+						  <li class="list-group-item" style="width: 230px;">Patrona di</li>
+						  <li class="list-group-item flex-fill">Filologi</li>
+						</ul>
+						<ul class="list-group list-group-horizontal-xl">
+						  <li class="list-group-item" style="width: 230px;">Controllo di autorità</li>
+						  <li class="list-group-item flex-fill">
+						  	<ul>
+						  		<li><a href="http://viaf.org/viaf/87772061/#Hildegard_von_Bingen,_A%CC%88btissin,_Heilige_1098-1179" target="_blank" title="Identificativo VIAF di Hildegardis : Bingensis" style="color: #cc0000;">87772061<sup>VIAF</sup></a></li>
+						  		<li><a href="https://opac.sbn.it/opacsbn/opac/iccu/scheda_authority.jsp?bid=IT%5CICCU%5CCFIV%5C094519" target="_blank" title="Identificativo SBN di Hildegardis : Bingensis" style="color: #cc0000;">IT\ICCU\CFIV\094519<sup>SBN</sup></a></li>
+						  		<li><a href="https://www.europeana.eu/it/collections/person/146832-hildegard-of-bingen" target="_blank" title="Identificativo Europeana di Hildegardis : Bingensis" style="color: #cc0000;">agent/base/146832<sup>Europeana</sup></a></li>
+						  		<li><a href="https://id.loc.gov/authorities/names/n80118409.html" target="_blank" title="Identificativo LCCN di Hildegardis : Bingensis" style="color: #cc0000;">n80118409<sup>LCCN</sup></a></li>
+						  		<li><a href="https://catalogue.bnf.fr/ark:/12148/cb11907515z" target="_blank" title="Identificativo BNF di Hildegardis : Bingensis" style="color: #cc0000;">cb11907515z<sup>BNF</sup></a></li>
+						  		<li><a href="https://opac.vatlib.it/auth/detail/495_69192" target="_blank" title="Identificativo BAV di Hildegardis : Bingensis" style="color: #cc0000;">495/69192<sup>BAV</sup></a></li>
+						  		<li><a href="https://www.worldcat.org/identities/lccn-n80118409/" target="_blank" title="Identificativo WorldCat di Hildegardis : Bingensis" style="color: #cc0000;">Iccn-n80118409<sup>WorldCat</sup></a></li>
+						  	</ul>
+						  </li>
+						</ul>
+						<ul class="list-group list-group-horizontal-xl">
+							<li class="list-group-item" style="width: 230px;">Temi</li>
+							<li class="list-group-item flex-fill">
+								<button type="button" class="btn btn-danger" style="width: 95px; height: 30px; padding: 2px 2px;">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+									  <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
+									  <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
+									</svg>Profezie</button>
+							  	<button type="button" class="btn btn-light" style="width: 95px; height: 30px; padding: 2px 2px;">
+							  		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+									  <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
+									  <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
+									</svg>Santi</button>
+							  	<button type="button" class="btn btn-secondary" style="width: 95px; height: 30px; padding: 2px 2px;">
+							 		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+									  <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0z"/>
+									  <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1zm0 5.586 7 7L13.586 9l-7-7H2v4.586z"/>
+									</svg>Medioevo</button>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-md-2">
+						<h4>Elementi correlati:</h4>
+
+							<div id="Vidi" class="card">
+							  <img src="immagini/Vidi-ab-aquilone-icona.jpg" class="card-img-top" alt="Gioacchino autore" style="width: 220px; height: 260px;">
+							  <div class="card-body">
+							    <h5 class="card-title">Vidi ab aquilone</h5>
+							    <p class="card-text" style="margin-bottom: 5px;">Autore: <a href="#">Ildegarda di Bingen</a></p>
+							    <p class="card-text">Una profezia contro Federico Barbarossa?</p>
+							    <a href="#" class="btn btn-danger">Vai al testo</a>
+							  </div>
+							</div>
+
+							<div id="Gioacchino" class="card">
+							  <img src="immagini/Gioacchino-da-fiore.jpg" class="card-img-top" alt="Gioacchino autore" style="width: 220px; height: 270px;">
+							  <div class="card-body">
+							    <h5 class="card-title">Gioacchino da Fiore</h5>
+							    <p class="card-text">Autore</p>
+							    <a href="#" class="btn btn-danger">Vai alla scheda autore</a>
+							  </div>
+							</div>
+					</div>
+				</div>
+			</div>
+
+				<!-- torna su -->
+				<p style="margin-left: 1100px;"><a href="#intestazione">
+				<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-caret-up" viewBox="0 0 16 16">
+			  		<path d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z"/>
+				</svg></a></p>
+			
+		</section>
+
+		<!-- Bootstrap JS collegamento a jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	
+    <footer>
+		<p style="padding-top: 50px;">Info</p>
+		<p>Contatti</p>
+		<p>FAQ</p>
+		<p>Collabora con noi</p>
+		<p>Licenza<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Licenza Creative Commons" style="margin-left: 7px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br/></p>
+		<p style="padding-bottom: 50px;">&copy; Cristina Ricciardi, Corso di DH & CH, 2021</p>
+	</footer>
+
+	</body>
+</html>
